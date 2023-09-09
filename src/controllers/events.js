@@ -39,7 +39,7 @@ export function matchDaysWithEvents(match) {
       const matchedEvents = [];
       const date = day.date;
       const uid = day.uid;
-      console.log("MATCHED EVENTS", match.events);
+      // console.log("MATCHED EVENTS", match.events);
       match.events.forEach((event) => {
         // console.log(
         //   date,
@@ -54,7 +54,7 @@ export function matchDaysWithEvents(match) {
         return compareAsc(parseISO(a.start), parseISO(b.start));
       });
       console.log("SORTED EVENTS", sortedEvents);
-      console.log("EVENTS", match.events);
+      // console.log("EVENTS", match.events);
 
       return { date, matchedEvents, uid };
     });
